@@ -1,0 +1,99 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-16 23:21+0330\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: skyroom/skyroom.py:20
+msgid "Component display name"
+msgstr "نام نمایشی مؤلفه"
+
+#: skyroom/skyroom.py:21
+msgid "SkyRoom XBlock"
+msgstr "اسکای روم"
+
+#: skyroom/skyroom.py:23
+msgid "Title of the block. Course creators will see this name."
+msgstr "عنوان بلاک. آموزشگاه‌ها این نام را خواهند دید."
+
+#: skyroom/skyroom.py:28
+msgid "Block description"
+msgstr "توضیحات بلاک"
+
+#: skyroom/skyroom.py:30
+msgid ""
+"A description of the block. Usually guides the students on what this is "
+"about."
+msgstr ""
+"توضیحات مربوط به بلاک. معمولا برای هدایت دانشجویان در مورد موضوع بلاک به "
+"کار می‌رود."
+
+#: skyroom/skyroom.py:36
+msgid "Room ID"
+msgstr "شناسه اتاق"
+
+#: skyroom/skyroom.py:37
+msgid "ID of the class room"
+msgstr "شناسه کلاس درس"
+
+#: skyroom/skyroom.py:42
+msgid "TTL"
+msgstr "زمان انقضا"
+
+#: skyroom/skyroom.py:43
+msgid "Time To Live. How long the link is valid. in seconds."
+msgstr "مدت زمان معتبر بودن لینک بر حسب ثانیه"
+
+#: skyroom/skyroom.py:47
+msgid "Error Message"
+msgstr "پیام خطا"
+
+#: skyroom/skyroom.py:48
+msgid "Error message to display to the user."
+msgstr "پیام خطا برای نمایش به کاربر."
+
+#: skyroom/skyroom.py:49
+msgid "An error has occurred."
+msgstr "خطایی رخ داده است."
+
+#: skyroom/skyroom.py:48
+msgid "Link Title"
+msgstr "عنوان لینک"
+
+#: skyroom/skyroom.py:49
+msgid "This will show up on the link which users will click on."
+msgstr "این بر روی لینکی که کاربران روی آن کلیک خواهند کرد نمایش داده خواهد شد."
+
+#: skyroom/skyroom.py:50
+msgid "Enter class"
+msgstr "ورود به کلاس"
+
+#: skyroom/skyroom.py:54
+msgid "Language"
+msgstr "زبان"
+
+#: skyroom/skyroom.py:55
+msgid "Skyroom will show to the students with the selected language"
+msgstr "اسکای روم به دانش‌آموزان با زبان انتخابی نمایش داده خواهد شد"
+
+#: skyroom/skyroom.py:129
+msgid "Failed to create login url"
+msgstr "خطا در ایجاد آدرس ورود"
+
+#: skyroom/static/html/skyroom.html:8
+msgid "You need to set the SKYROOM_API_KEY in your settings.py file"
+msgstr "شما باید کلید SKYROOM_API_KEY را در فایل settings.py تنظیم کنید"

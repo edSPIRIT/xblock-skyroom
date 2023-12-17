@@ -1,0 +1,10 @@
+{% load clickaware_tags %}
+<div class="skyroom-wrapper">
+    <div {% if not is_key_set %}class="blurred"{% endif %}>
+        {% if description %}<p>{{description}}</p>{% endif %}
+        <a href="#" target="_blank" class="simple-link" id="target-url">{{ link_title }}</a>
+    </div>
+    {% if not is_key_set %}
+    <div id="key-reminder" class="error-msg">{% trans 'You need to set the SKYROOM_API_KEY in your settings.py file' %}</div>
+    {% endif %}
+</div>

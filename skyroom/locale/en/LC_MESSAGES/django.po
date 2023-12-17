@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-17 00:22+0330\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: skyroom/skyroom.py:21
+msgid "Component display name"
+msgstr ""
+
+#: skyroom/skyroom.py:22
+msgid "SkyRoom XBlock"
+msgstr ""
+
+#: skyroom/skyroom.py:23
+msgid "Title of the block. Course creators will see this name."
+msgstr ""
+
+#: skyroom/skyroom.py:27
+msgid "Block description"
+msgstr ""
+
+#: skyroom/skyroom.py:29
+msgid ""
+"A description of the block. Usually guides the students on what this is "
+"about."
+msgstr ""
+
+#: skyroom/skyroom.py:35
+msgid "Room ID"
+msgstr ""
+
+#: skyroom/skyroom.py:36
+msgid "ID of the class room"
+msgstr ""
+
+#: skyroom/skyroom.py:41
+msgid "TTL"
+msgstr ""
+
+#: skyroom/skyroom.py:42
+msgid "Time To Live. How long the link is valid. in seconds."
+msgstr ""
+
+#: skyroom/skyroom.py:47
+msgid "Error Message"
+msgstr ""
+
+#: skyroom/skyroom.py:48
+msgid "Error message to display to the user."
+msgstr ""
+
+#: skyroom/skyroom.py:49
+msgid "An error has occurred."
+msgstr ""
+
+#: skyroom/skyroom.py:54
+msgid "Link Title"
+msgstr ""
+
+#: skyroom/skyroom.py:55
+msgid "This will show up on the link which users will click on."
+msgstr ""
+
+#: skyroom/skyroom.py:56
+msgid "Enter class"
+msgstr ""
+
+#: skyroom/skyroom.py:60
+msgid "Language"
+msgstr ""
+
+#: skyroom/skyroom.py:61
+msgid "Skyroom will show to the students with the selected language"
+msgstr ""
+
+#: skyroom/static/html/skyroom.html:8
+msgid "You need to set the SKYROOM_API_KEY in your settings.py file"
+msgstr ""
