@@ -26,7 +26,7 @@ setup(
     name="skyroom-xblock",
     author="edSPIRIT",
     description="a simple XBlock to login users to SkyRoom",
-    version="0.2.1",
+    version="0.2.2",
     license="MIT",
     packages=[
         "skyroom",
