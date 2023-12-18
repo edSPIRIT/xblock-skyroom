@@ -1,17 +1,22 @@
 # -*- coding: utf-8 -*-
 """TO-DO: Write a description of what this XBlock is."""
 
+import logging
+
 import pkg_resources
-from django.utils.translation import ugettext_lazy as _
+import requests
 from django.conf import settings
+from django.utils.translation import ugettext_lazy as _
 from web_fragments.fragment import Fragment
+from xblock.completable import CompletableXBlockMixin, XBlockCompletionMode
 from xblock.core import XBlock
-from xblock.fields import Boolean, Scope, String, Integer
-from xblock.completable import XBlockCompletionMode, CompletableXBlockMixin
+from xblock.fields import Boolean, Integer, Scope, String
 from xblock.utils.studio_editable import StudioEditableXBlockMixin
 
 from .utils import render_template
-import requests
+
+
+logger = logging.getLogger(__name__)
 
 
 @XBlock.wants("user")
@@ -36,7 +41,6 @@ class SkyRoomXBlock(XBlock, CompletableXBlockMixin, StudioEditableXBlockMixin):
         help=_("URL of the Skyroom instance. for example: https://www.skyroom.online"),
         default="https://www.skyroom.online",
         scope=Scope.content,
-
     )
     room_id = Integer(
         display_name=_("Room ID"),
@@ -138,11 +142,11 @@ class SkyRoomXBlock(XBlock, CompletableXBlockMixin, StudioEditableXBlockMixin):
     @XBlock.json_handler
     def mark_as_viewed(self, data, suffix=""):
         created, url = self.create_login_url(self.get_user_data())
-        print(created, url)
+        logger.debug(f"createLoginURL result: created:{created}, url:{url}")
         if not created:
             return {
                 "result": "error",
-                "message": str(self.error_message)
+                "message": str(self.error_message),
             }
         self.viewed = True
         self.runtime.publish(self, "completion", {"completion": 1.0})
@@ -154,7 +158,7 @@ class SkyRoomXBlock(XBlock, CompletableXBlockMixin, StudioEditableXBlockMixin):
     def create_login_url(self, user_data):
         base_url = "{instance_url}/skyroom/api/{key}".format(
             instance_url=self.instance_url,
-            key=self.get_skyroom_api_key()
+            key=self.get_skyroom_api_key(),
         )
         payload = {
             "action": "createLoginUrl",
@@ -175,6 +179,13 @@ class SkyRoomXBlock(XBlock, CompletableXBlockMixin, StudioEditableXBlockMixin):
         response = requests.post(base_url, json=payload)
         if response.json().get("ok") == True:
             return True, response.json().get("result")
+        logger.error(
+            "Error creating login url: {}, payload: {}, endpoint: {}".format(
+                response.json(),
+                payload,
+                self.instance_url,
+            )
+        )
         return False, "No URL"
 
     @staticmethod
