@@ -160,12 +160,14 @@ class SkyRoomXBlock(XBlock, CompletableXBlockMixin, StudioEditableXBlockMixin):
             instance_url=self.instance_url,
             key=self.get_skyroom_api_key(),
         )
+        full_name = user_data.get("full_name")
+        username = user_data.get("username")
         payload = {
             "action": "createLoginUrl",
             "params": {
                 "room_id": self.room_id,
-                "user_id": user_data.get("username"),
-                "nickname": user_data.get("full_name"),
+                "user_id": username,
+                "nickname": full_name if full_name else username,
                 "access": 1
                 if user_data.get("is_staff")
                 or user_data.get("user_role") == "instructor"
