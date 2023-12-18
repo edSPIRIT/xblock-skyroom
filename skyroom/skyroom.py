@@ -31,6 +31,13 @@ class SkyRoomXBlock(XBlock, CompletableXBlockMixin, StudioEditableXBlockMixin):
         default="To Enter the class, go ahead and click on the link below.",
         scope=Scope.content,
     )
+    instance_url = String(
+        display_name=_("Instance URL"),
+        help=_("URL of the Skyroom instance. for example: https://www.skyroom.online"),
+        default="https://www.skyroom.online",
+        scope=Scope.content,
+
+    )
     room_id = Integer(
         display_name=_("Room ID"),
         help=_("ID of the class room"),
@@ -71,6 +78,7 @@ class SkyRoomXBlock(XBlock, CompletableXBlockMixin, StudioEditableXBlockMixin):
     editable_fields = (
         "display_name",
         "description",
+        "instance_url",
         "room_id",
         "ttl",
         "link_title",
@@ -144,7 +152,8 @@ class SkyRoomXBlock(XBlock, CompletableXBlockMixin, StudioEditableXBlockMixin):
         }
 
     def create_login_url(self, user_data):
-        base_url = "https://www.skyroom.online/skyroom/api/{key}".format(
+        base_url = "{instance_url}/skyroom/api/{key}".format(
+            instance_url=self.instance_url,
             key=self.get_skyroom_api_key()
         )
         payload = {
