@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-17 00:22+0330\n"
+"POT-Creation-Date: 2023-12-18 12:53+0330\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,50 +41,58 @@ msgid ""
 msgstr ""
 
 #: skyroom/skyroom.py:35
-msgid "Room ID"
+msgid "Instance URL"
 msgstr ""
 
 #: skyroom/skyroom.py:36
-msgid "ID of the class room"
-msgstr ""
-
-#: skyroom/skyroom.py:41
-msgid "TTL"
+msgid "URL of the Skyroom instance. for example: https://www.skyroom.online"
 msgstr ""
 
 #: skyroom/skyroom.py:42
-msgid "Time To Live. How long the link is valid. in seconds."
+msgid "Room ID"
 msgstr ""
 
-#: skyroom/skyroom.py:47
-msgid "Error Message"
+#: skyroom/skyroom.py:43
+msgid "ID of the class room"
 msgstr ""
 
 #: skyroom/skyroom.py:48
-msgid "Error message to display to the user."
+msgid "TTL"
 msgstr ""
 
 #: skyroom/skyroom.py:49
-msgid "An error has occurred."
+msgid "Time To Live. How long the link is valid. in seconds."
 msgstr ""
 
 #: skyroom/skyroom.py:54
-msgid "Link Title"
+msgid "Error Message"
 msgstr ""
 
 #: skyroom/skyroom.py:55
-msgid "This will show up on the link which users will click on."
+msgid "Error message to display to the user."
 msgstr ""
 
 #: skyroom/skyroom.py:56
-msgid "Enter class"
-msgstr ""
-
-#: skyroom/skyroom.py:60
-msgid "Language"
+msgid "An error has occurred."
 msgstr ""
 
 #: skyroom/skyroom.py:61
+msgid "Link Title"
+msgstr ""
+
+#: skyroom/skyroom.py:62
+msgid "This will show up on the link which users will click on."
+msgstr ""
+
+#: skyroom/skyroom.py:63
+msgid "Enter class"
+msgstr ""
+
+#: skyroom/skyroom.py:67
+msgid "Language"
+msgstr ""
+
+#: skyroom/skyroom.py:68
 msgid "Skyroom will show to the students with the selected language"
 msgstr ""
 
