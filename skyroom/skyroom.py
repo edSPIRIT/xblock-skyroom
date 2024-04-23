@@ -168,10 +168,10 @@ class SkyRoomXBlock(XBlock, CompletableXBlockMixin, StudioEditableXBlockMixin):
                 "room_id": self.room_id,
                 "user_id": username,
                 "nickname": full_name if full_name else username,
-                "access": 1
+                "access": 3
                 if user_data.get("is_staff")
                 or user_data.get("user_role") == "instructor"
-                else 3,
+                else 1,
                 "concurrent": 1,
                 "language": self.language,
                 "ttl": self.ttl,
