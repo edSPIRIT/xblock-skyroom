@@ -13,4 +13,4 @@ def trans(context, term):
     Translate term using own xblock's translations.
     """
     i18n_service = context['i18n_service']
-    return i18n_service.ugettext_lazy(term)
+    return i18n_service.gettext_lazy(term)

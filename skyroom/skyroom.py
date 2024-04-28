@@ -6,7 +6,7 @@ import logging
 import pkg_resources
 import requests
 from django.conf import settings
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 from web_fragments.fragment import Fragment
 from xblock.completable import CompletableXBlockMixin, XBlockCompletionMode
 from xblock.core import XBlock
