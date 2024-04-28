@@ -33,7 +33,7 @@ setup(
     ],
     install_requires=[
         "xblock==1.8.1",
-        "requests==2.28.0",
+        "requests==2.31.0",
     ],
     entry_points={
         "xblock.v1": [
