@@ -12,7 +12,7 @@ We need a ``SKYROOM_API_KEY`` to send a ``createLoginUrl`` request. if you're us
 
   tutor config save -s SKYROOM_API_KEY="MY_SECRET_API_KEY"
 
-then, create a tutor plugin called ``skyroom.py`` like below: 
+then, create a tutor plugin called ``skyroom.py`` in your plugins root directory like below: 
 
 .. code-block:: python
 
@@ -27,4 +27,7 @@ then, create a tutor plugin called ``skyroom.py`` like below:
       )
   )
 
+
 This will patch ``SKYROOM_API_KEY`` to both lms and cms. That's it!
+
+Don't forget to enable the plugin using ``tutor plugins enable skyroom``
