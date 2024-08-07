@@ -32,7 +32,7 @@ setup(
         "skyroom",
     ],
     install_requires=[
-        "xblock==1.8.1",
+        "xblock",
         "requests==2.31.0",
     ],
     entry_points={
